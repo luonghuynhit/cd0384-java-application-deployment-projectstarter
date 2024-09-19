@@ -61,8 +61,8 @@ class SecurityServiceTest {
                 new Sensor("Back Door", SensorType.DOOR)
         ));
 
-        securityService.changeSensorActivationStatus(new Sensor("Front Door", SensorType.DOOR), false);
-        securityService.changeSensorActivationStatus(new Sensor("Back Door", SensorType.DOOR), false);
+        securityService.changeSensorActivationStatus(new Sensor("Front Door", SensorType.DOOR, true), false);
+        securityService.changeSensorActivationStatus(new Sensor("Back Door", SensorType.DOOR, true), false);
 
         verify(securityRepository).setAlarmStatus(AlarmStatus.NO_ALARM);
     }

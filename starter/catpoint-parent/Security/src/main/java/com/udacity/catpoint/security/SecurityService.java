@@ -116,6 +116,7 @@ public class SecurityService {
         securityRepository.updateSensor(sensor);
     }
 
+
     /**
      * Send an image to the SecurityService for processing. The securityService will use its provided
      * ImageService to analyze the image for cats and update the alarm status accordingly.
